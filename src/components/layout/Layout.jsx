@@ -1,12 +1,23 @@
 import NavBar from "./NavBar";
 import Footer from "./Footer";
-import { Outlet } from "react-router";
+import { Outlet, useLocation } from "react-router";
 
 const Layout = () => {
+  const layoutClasess = {
+    "/": "items-center",
+    projects: "items-start",
+  };
+
+  let location = useLocation();
+
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col h-dvh min-h-dvh ">
       <NavBar />
-      <main className="flex-1">
+      <main
+        className={`flex-1 flex justify-center ${
+          layoutClasess[location.pathname]
+        } `}
+      >
         <Outlet />
       </main>
       <Footer />
