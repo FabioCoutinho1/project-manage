@@ -5,7 +5,7 @@ import { Outlet, useLocation } from "react-router";
 const Layout = () => {
   const layoutClasess = {
     "/": "items-center",
-    projects: "items-start",
+    "/projects": "items-start",
   };
 
   let location = useLocation();

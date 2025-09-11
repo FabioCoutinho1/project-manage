@@ -9,7 +9,11 @@ const Projects = () => {
         <h2 className="text-purple-800 text-2xl font-bold font-Poppins">
           Meus projetos
         </h2>
-        <PrimaryButton text={"Criar Projeto"} styleButton={"primary"} />
+        <PrimaryButton
+          text={"Criar Projeto"}
+          styleButton={"primary"}
+          navigationButton={"/newProject"}
+        />
       </div>
 
       <div className=" flex flex-col gap-5">

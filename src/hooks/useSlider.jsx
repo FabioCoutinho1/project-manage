@@ -13,8 +13,6 @@ export const useSlider = (totalSlider, autoPlayTimer = 5000) => {
     }
   }, [totalSlider, autoPlayTimer]);
 
-  console.log(currentSlide);
-
   const goToSlide = (index) => {
     if (index >= 0 && index < totalSlider) {
       setCurrentSlide(index);
