@@ -1,14 +1,13 @@
 import React from "react";
 import PrimaryButton from "../buttonPrimary/PrimaryButton";
 import ProjectsAndServices from "../projectsAndServices/ProjectsAndServices";
+import Title from "../title/Title";
 
 const Projects = () => {
   return (
     <section className="flex flex-col gap-7 p-4 justify-center h-full w-full bg-purple-50">
-      <div className="flex justify-between w-full">
-        <h2 className="text-purple-800 text-2xl font-bold font-Poppins">
-          Meus projetos
-        </h2>
+      <div className="flex justify-between items-center w-full">
+        <Title text={"Meus projetos"} />
         <PrimaryButton
           text={"Criar Projeto"}
           styleButton={"primary"}

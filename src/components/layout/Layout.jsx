@@ -6,6 +6,7 @@ const Layout = () => {
   const layoutClasess = {
     "/": "items-center",
     "/projects": "items-start",
+    "/newProject": "items-center",
   };
 
   let location = useLocation();

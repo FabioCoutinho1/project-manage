@@ -1,16 +1,19 @@
-import React from "react";
 import Input from "../form/Input";
 import Select from "../form/Select";
-import PrimaryButton from "../buttonPrimary/PrimaryButton";
+
+import SubmitButton from "../form/SubmitButton";
+import Title from "../title/Title";
 
 const NewProject = () => {
   return (
-    <section>
+    <section className="flex flex-col gap-7 p-4 justify-center h-full bg-purple-50">
       <div>
-        <h2>Novo Projeto</h2>
-        <p>Crie seu projeto para depois adicionar serviços</p>
+        <Title text={"Novo Projeto"} />
+        <p className="font-Poppins font-semibold text-center">
+          Crie seu projeto para depois adicionar serviços
+        </p>
       </div>
-      <form>
+      <form className="flex flex-col gap-4">
         <Input
           type={"text"}
           name={"nameProject"}
@@ -26,7 +29,7 @@ const NewProject = () => {
 
         <Select />
 
-        <PrimaryButton text={"Criar"} styleButton={"primary"} type={"submit"} />
+        <SubmitButton text={"Enviar"} />
       </form>
     </section>
   );
