@@ -3,7 +3,7 @@ import Slider from "../slider/Slider";
 
 const Home = () => {
   return (
-    <section className="flex flex-col gap-7 p-4 justify-center h-full bg-purple-50">
+    <section className="flex flex-col gap-7 p-4  h-full bg-purple-50">
       <p className="text-center">HOME</p>
       <h2 className="text-2xl text-center font-Poppins ">
         Bem vindo ao
