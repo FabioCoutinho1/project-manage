@@ -6,4 +6,11 @@
   --font-Roboto: "Roboto", sans-serif;
 
   --text-1x: 1.3rem;
+
+  --color-primary: #2373CF;
+  --color-secondary: #376AA5;
+  --color-suport:#0177FA ;
+  --color-dark-text: #3D5A7A;
+  --color-sub-text: #354250;
+  --color-light: #fff;
 }
